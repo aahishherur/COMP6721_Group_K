@@ -13,6 +13,7 @@ Loss Function: Cross Entropy
 Decaying LR: Step LR with step size=20 and gamma=0.5
 
 **The Source Code and Datasets are under the 'Project_Code.ipynb' and 'Datasets.rar' file respectively**
+**All the obtained results can found within the 'Later Trainings Subsection**
 
 # Code Requirements
 Jupyter Notebook can be installed using ```pip install notebook``` and then executed using ```run notebook```
@@ -49,6 +50,8 @@ mdlname=['Shufflenet','MnasNet','MobileNetV2_TL']
 ```
 Run all the cells to initiate the training process.
 ![image](https://user-images.githubusercontent.com/52701687/206004048-dae4617f-dfbe-45fa-b479-d3f6743e1770.png)
+![image](https://user-images.githubusercontent.com/52701687/206014176-bc826324-b091-4484-a015-875a8161a962.png)
+
 
 # Testing on a Sample Dataset
 A total of 3 models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
