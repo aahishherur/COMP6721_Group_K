@@ -107,3 +107,23 @@ def test_model(model,test_loader):
  ```
  
  Change the paths corresponding to your respective machine and run the following block of code
+```python
+test_path='D:/Datasets/Sample Set'
+model=torch.load('D:/Datasets/Models/VGG-16 Fine_tuning Fer-Masked')
+mn=[0.4149, 0.4694, 0.5233]
+sd=[0.2617, 0.2725, 0.3079]
+batch_size=32
+
+transform_dict={"src":transforms.Compose([transforms.ToTensor(),transforms.Resize(size=(224,224)),transforms.Normalize(mean=mn,std=sd),
+            transforms.RandomHorizontalFlip(),transforms.RandomVerticalFlip(),
+            transforms.RandomRotation(degrees=180),transforms.RandomAdjustSharpness(sharpness_factor=1.4)])}
+test_dataset=datasets.ImageFolder(root=test_path,transform=transform_dict["src"])
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size,
+    shuffle=False, drop_last=False,num_workers=0)
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print("Device: {}".format(device))
+model.to(device)
+
+test_model(model,test_loader)
+```
