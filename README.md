@@ -18,4 +18,24 @@ The following libraries need to be imported afterwards:
 1. Pytorch : ```pip install torch```, Used for importing all the various functions
 2. Torchvision : ```pip install torchvision```, Used for executing the dataloader commands
 3. Matplotlib : ```pip install matplotlib``` , Used for displaying and storing the results in the form of graphs
-4. 
+4. Torchsummary/Pthflops : ```pip install torchsummary/pip install pthflops```, Used for calculating a models's learnable parameters and flops respectively
+
+# Training/Validating Procedure
+The code makes use of a single folder of images consisting of the various multiclasses.
+![image](https://user-images.githubusercontent.com/52701687/206001948-81cc9b38-728c-47f7-a612-67cfff575dd3.png)
+
+The path to these folders can be modified with the train_path list, in conjuction with modifiying the path for storing the trained models and their graphical results.
+```python
+train_paths=['D:/Datasets/Natural-Faces/train/','D:/Datasets/Tiny/train/','D:/Datasets/FerMasked/train/']
+mdl_path='D:/Datasets/Models/'
+img_path='D:/Datasets/Images/'
+```
+The default parameters can be changed as per the system's compuatational capability and project requirements
+```python
+batch_size=32
+image_size=(224,224)
+num_epochs=100
+learning_rate=0.001
+weight_dec=0.001
+```
+
