@@ -38,4 +38,13 @@ num_epochs=100
 learning_rate=0.001
 weight_dec=0.001
 ```
+Define the models within the mdls list, with ```weights=True``` for the purposes of trasnfer Learning. 
+The respective labels to be displayed within the results can also be altered.
+```python
+mdls=[torchvision.models.shufflenet_v2_x0_5(),torchvision.models.mnasnet0_5(),torchvision.models.mobilenet_v2(weights=True)]
+dtaname=['Natural-Faces','Tiny','Fer-Masked']
+mdlname=['Shufflenet','MnasNet','MobileNetV2_TL'] 
+```
+Run all the cells to initiate the training process.
+![image](https://user-images.githubusercontent.com/52701687/206004048-dae4617f-dfbe-45fa-b479-d3f6743e1770.png)
 
