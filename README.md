@@ -1,5 +1,5 @@
 # AI_Project_Group_K
-Artificial Intelligence (COMP 6721) Fall 2022 Project Group K
+Artificial Intelligence (COMP 6721) Fall 2022 Project Group K  
 Team Members :
 1. Aahish Nagesh Herur (40231239)
 2. Raquib Tajmohamed  (40231238)
