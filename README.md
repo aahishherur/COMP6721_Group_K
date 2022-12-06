@@ -50,6 +50,7 @@ mdlname=['Shufflenet','MnasNet','MobileNetV2_TL']
 ```
 Run all the cells to initiate the training process.
 ![image](https://user-images.githubusercontent.com/52701687/206004048-dae4617f-dfbe-45fa-b479-d3f6743e1770.png)
+The accuracy and loss metrics will be displayed for each epoch as shown below:
 ![image](https://user-images.githubusercontent.com/52701687/206014176-bc826324-b091-4484-a015-875a8161a962.png)
 
 
