@@ -1,5 +1,11 @@
 # AI_Project_Group_K
 Artificial Intelligence (COMP 6721) Fall 2022 Project Group K
+Team Members :
+1. Aahish Nagesh Herur (40231239)
+2. Raquib Tajmohamed  (40231238)
+3. Divye (40234622)
+4. Jatin  (40232526)
+
 
 # Project Description
 The following project aims to perform a multiclass image classification using Convolutional Neural Networks(CNN), being applied to facial recognition database of images imported from Kaggle. The code is purely written in Jupyter notebook through the use of existing pytorch libraries. The final results are available in the 'Later Trainings' Section with certain pre-trained models available for download via the 'Models' Section. A set of 3 models namely, ShuffleNetV2, MnasNet and MobilenetV2 were chosen for the purposes of the project. The default parameters for the training are as follows:
