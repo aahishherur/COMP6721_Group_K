@@ -53,7 +53,8 @@ Run all the cells to initiate the training process.
   
 
 The accuracy and loss metrics will be displayed for each epoch as shown below:
-![image](https://user-images.githubusercontent.com/52701687/206014176-bc826324-b091-4484-a015-875a8161a962.png)
+![image](https://user-images.githubusercontent.com/52701687/206018039-b2907d1b-7421-49e8-bfa8-1d4d7cdcff67.png)
+
 
 
 # Testing on a Sample Dataset
