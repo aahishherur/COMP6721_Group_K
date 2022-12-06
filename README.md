@@ -136,8 +136,9 @@ model.to(device)
 
 test_model(model,test_loader)
 ```
-  
-![image](https://user-images.githubusercontent.com/52701687/206020374-a2529370-d60d-4c80-ae2a-e5d6658fbed2.png)
+
+The output classification matrix highlighting the True positives as the diagonal elements
+![image](https://user-images.githubusercontent.com/52701687/206020647-ea672a76-9a2e-4453-a400-fb3d3068b25a.png)
 
 
 
