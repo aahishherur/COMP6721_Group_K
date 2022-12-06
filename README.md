@@ -21,7 +21,7 @@ The following libraries need to be imported afterwards:
 4. Torchsummary/Pthflops : ```pip install torchsummary/pip install pthflops```, Used for calculating a models's learnable parameters and flops respectively
 
 # Training/Validating Procedure
-The code makes use of a single folder of images consisting of the various multiclasses.
+The code makes use of a single folder consisting of the various image multiclasses.
 ![image](https://user-images.githubusercontent.com/52701687/206001948-81cc9b38-728c-47f7-a612-67cfff575dd3.png)
 
 The path to these folders can be modified with the train_path list, in conjuction with modifiying the path for storing the trained models and their graphical results.
@@ -47,4 +47,10 @@ mdlname=['Shufflenet','MnasNet','MobileNetV2_TL']
 ```
 Run all the cells to initiate the training process.
 ![image](https://user-images.githubusercontent.com/52701687/206004048-dae4617f-dfbe-45fa-b479-d3f6743e1770.png)
+
+# Testing on a Sample Dataset
+A total of 3 models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
+The Sample Dataset of 500 randomly selected images is available within the 'Sample Set' Section.
+
+The following code can thus be used to test it on any of the models preferred.
 
