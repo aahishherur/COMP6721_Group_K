@@ -19,7 +19,7 @@ Loss Function: Cross Entropy
 Decaying LR: Step LR with step size=20 and gamma=0.5
 
 **The Source Code and Datasets are under the 'Project_Code.ipynb' and 'Datasets.rar' file respectively**  
-**All the obtained results can found within the 'Later Trainings Subsection**
+**All the obtained results can found within the 'Later Trainings' Subsection**
 
 # Code Requirements
 Jupyter Notebook can be installed using ```pip install notebook``` and then executed using ```run notebook```
