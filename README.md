@@ -11,3 +11,11 @@ No_of_Epochs: 100
 Image Size: 224*224 pixels  
 Loss Function: Cross Entropy  
 Decaying LR: Step LR with step size=20 and gamma=0.5
+
+# Code Requirements
+Jupyter Notebook can be installed using ```pip install notebook``` and then executed using ```run notebook```
+The following libraries need to be imported afterwards:
+1. Pytorch : ```pip install torch```, Used for importing all the various functions
+2. Torchvision : ```pip install torchvision```, Used for executing the dataloader commands
+3. Matplotlib : ```pip install matplotlib``` , Used for displaying and storing the results in the form of graphs
+4. 
