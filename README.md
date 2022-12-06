@@ -118,7 +118,7 @@ def test_model(model,test_loader):
  Change the paths for loading the pretrained model and sample set corresponding to your respective machine and run the following block of code
 ```python
 test_path='D:/Datasets/Sample Set'
-model=torch.load('D:/Datasets/Models/VGG-16 Fine_tuning Fer-Masked')
+model=torch.load('D:/Datasets/Models/Shufflenet Fer-Masked')
 mn=[0.4149, 0.4694, 0.5233]
 sd=[0.2617, 0.2725, 0.3079]
 batch_size=32
@@ -136,3 +136,8 @@ model.to(device)
 
 test_model(model,test_loader)
 ```
+  
+![image](https://user-images.githubusercontent.com/52701687/206020374-a2529370-d60d-4c80-ae2a-e5d6658fbed2.png)
+
+
+
