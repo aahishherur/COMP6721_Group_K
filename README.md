@@ -58,7 +58,7 @@ The accuracy and loss metrics will be displayed for each epoch as shown below:
 
 
 # Testing on a Sample Dataset
-A total of 3 models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
+A total of 6 (3 Normal+ 3 Trasnfer Learned) models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
 The Sample Dataset of 500 randomly selected images is available within the 'Sample Set' Section.
 
 The following code can thus be used to test it on any of the models preferred.
