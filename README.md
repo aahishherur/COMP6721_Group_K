@@ -108,7 +108,7 @@ def test_model(model,test_loader):
         plt.show()
  ```
  
- Change the paths corresponding to your respective machine and run the following block of code
+ Change the paths for loading the pretrained model and sample set corresponding to your respective machine and run the following block of code
 ```python
 test_path='D:/Datasets/Sample Set'
 model=torch.load('D:/Datasets/Models/VGG-16 Fine_tuning Fer-Masked')
