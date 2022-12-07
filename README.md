@@ -3,8 +3,8 @@ COMP 6721 Fall 2022 Project Group K
 Team Members :
 1. Aahish Nagesh Herur (40231239)
 2. Raquib Tajmohamed  (40231238)
-3. Divye (40234622)
-4. Jatin  (40232526)
+3. Divye Pugaloke (40234622)
+4. Jatin Chhabra (40232526)
 
 
 # Project Description
