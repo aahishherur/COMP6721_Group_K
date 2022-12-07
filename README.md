@@ -1,5 +1,11 @@
 # AI_Project_Group_K
-Artificial Intelligence (COMP 6721) Fall 2022 Project Group K
+COMP 6721 Fall 2022 Project Group K  
+Team Members :
+1. Aahish Nagesh Herur (40231239)
+2. Raquib Tajmohamed  (40231238)
+3. Divye Pugaloke (40234622)
+4. Jatin Chhabra (40232526)
+
 
 # Project Description
 The following project aims to perform a multiclass image classification using Convolutional Neural Networks(CNN), being applied to facial recognition database of images imported from Kaggle. The code is purely written in Jupyter notebook through the use of existing pytorch libraries. The final results are available in the 'Later Trainings' Section with certain pre-trained models available for download via the 'Models' Section. A set of 3 models namely, ShuffleNetV2, MnasNet and MobilenetV2 were chosen for the purposes of the project. The default parameters for the training are as follows:
@@ -13,7 +19,7 @@ Loss Function: Cross Entropy
 Decaying LR: Step LR with step size=20 and gamma=0.5
 
 **The Source Code and Datasets are under the 'Project_Code.ipynb' and 'Datasets.rar' file respectively**  
-**All the obtained results can found within the 'Later Trainings Subsection**
+**All the obtained results can found within the 'Later Trainings' Subsection**
 
 # Code Requirements
 Jupyter Notebook can be installed using ```pip install notebook``` and then executed using ```run notebook```
@@ -58,7 +64,7 @@ The accuracy and loss metrics will be displayed for each epoch as shown below:
 
 
 # Testing on a Sample Dataset
-A total of 3 models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
+A total of 6 (3 Normal+ 3 Trasnfer Learned) models trained on the Fer-Masked Dataset have been provided within the 'Models' Section.
 The Sample Dataset of 500 randomly selected images is available within the 'Sample Set' Section.
 
 The following code can thus be used to test it on any of the models preferred.
@@ -117,18 +123,17 @@ def test_model(model,test_loader):
  
  Change the paths for loading the pretrained model and sample set corresponding to your respective machine and run the following block of code
 ```python
+#CHANGE THESE TWO
 test_path='D:/Datasets/Sample Set'
-model=torch.load('D:/Datasets/Models/VGG-16 Fine_tuning Fer-Masked')
+model=torch.load('D:/Datasets/Models/Shufflenet Fer-Masked')
+
 mn=[0.4149, 0.4694, 0.5233]
 sd=[0.2617, 0.2725, 0.3079]
 batch_size=32
 
-transform_dict={"src":transforms.Compose([transforms.ToTensor(),transforms.Resize(size=(224,224)),transforms.Normalize(mean=mn,std=sd),
-            transforms.RandomHorizontalFlip(),transforms.RandomVerticalFlip(),
-            transforms.RandomRotation(degrees=180),transforms.RandomAdjustSharpness(sharpness_factor=1.4)])}
+transform_dict={"src":transforms.Compose([transforms.ToTensor(),transforms.Resize(size=(224,224)),transforms.Normalize(mean=mn,std=sd),transforms.RandomHorizontalFlip(),transforms.RandomVerticalFlip(),transforms.RandomRotation(degrees=180),transforms.RandomAdjustSharpness(sharpness_factor=1.4)])}
 test_dataset=datasets.ImageFolder(root=test_path,transform=transform_dict["src"])
-test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size,
-    shuffle=False, drop_last=False,num_workers=0)
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size,shuffle=False, drop_last=False,num_workers=0)
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("Device: {}".format(device))
@@ -136,3 +141,9 @@ model.to(device)
 
 test_model(model,test_loader)
 ```
+
+The output classification matrix highlighting the True positives as the diagonal elements
+![image](https://user-images.githubusercontent.com/52701687/206020647-ea672a76-9a2e-4453-a400-fb3d3068b25a.png)
+
+
+
